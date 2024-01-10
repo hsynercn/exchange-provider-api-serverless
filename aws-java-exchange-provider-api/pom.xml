@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.serverless</groupId>
-  <artifactId>exchange-provider-api</artifactId>
+  <artifactId>hello</artifactId>
   <packaging>jar</packaging>
   <version>dev</version>
-  <name>exchange-provider-api</name>
+  <name>hello</name>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
