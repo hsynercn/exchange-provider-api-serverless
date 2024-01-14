@@ -58,6 +58,16 @@ package:
 functions:
   hello:
     handler: com.serverless.Handler
+  getCurrency:
+    handler: com.functions.GetCurrency
+    events:
+      - http:
+          path: /currency
+          method: get
+  currencyDataFetcher:
+    handler: com.functions.CurrencyDataFetcher
+    events:
+      - schedule: rate(1 hour)
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -109,3 +119,9 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+
+iamRoleStatements:
+  - Effect: "Allow"
+    Action:
+      - "dynamodb:*"
+    Resource: "*"
