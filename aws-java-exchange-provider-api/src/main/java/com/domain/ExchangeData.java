@@ -6,7 +6,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import java.io.Serializable;
 
-@DynamoDBTable(tableName="ExchangeData")
+@DynamoDBTable(tableName="exchange_data_table")
 public class ExchangeData implements Serializable {
 
     private String id;

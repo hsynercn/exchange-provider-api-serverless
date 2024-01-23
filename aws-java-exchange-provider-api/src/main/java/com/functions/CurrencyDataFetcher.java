@@ -9,8 +9,11 @@ import com.domain.ExchangeData;
 import com.domain.ExchangeDataDBHandler;
 import com.model.ExchangeRate;
 import com.model.ExchangeRateList;
+import com.serverless.Handler;
 import com.sessiondata.ExchangeDataRepository;
 import com.util.GraphCalculator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,8 +22,11 @@ import java.util.Map;
 
 public class CurrencyDataFetcher implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
+    private static final Logger LOG = LogManager.getLogger(Handler.class);
+
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent apiGatewayProxyRequestEvent, Context context) {
+        LOG.info("received: {}", apiGatewayProxyRequestEvent);
         ExchangeRateList result = null;
         try {
             result = EuropeanCentralBankCurrencySource.extractData();
