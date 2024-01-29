@@ -26,13 +26,16 @@ public class CurrencyDataFetcher implements RequestHandler<APIGatewayProxyReques
 
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent apiGatewayProxyRequestEvent, Context context) {
-        LOG.info("received: {}", apiGatewayProxyRequestEvent);
+        LOG.info("CurrencyDataFetcher triggered");
         ExchangeRateList result = null;
         try {
             result = EuropeanCentralBankCurrencySource.extractData();
         } catch (Exception e) {
+            LOG.error(e.getMessage());
+            LOG.error(e.getStackTrace());
             e.printStackTrace();
         }
+        LOG.info("CurrencyDataFetcher result: " + result.getList());
         String mainCurrencyCode = "USD";
         ArrayList<ExchangeRate> traversalList = GraphCalculator.traversal(result, mainCurrencyCode);
 
