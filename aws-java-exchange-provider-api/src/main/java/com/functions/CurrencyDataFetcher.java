@@ -39,6 +39,8 @@ public class CurrencyDataFetcher implements RequestHandler<APIGatewayProxyReques
         String mainCurrencyCode = "USD";
         ArrayList<ExchangeRate> traversalList = GraphCalculator.traversal(result, mainCurrencyCode);
 
+        LOG.info("CurrencyDataFetcher traversalList: " + traversalList);
+
         ExchangeDataRepository exchangeDataRepository = new ExchangeDataRepository();
         exchangeDataRepository.setDate(result.getDate());
         exchangeDataRepository.setMainCode(mainCurrencyCode);
@@ -49,7 +51,11 @@ public class CurrencyDataFetcher implements RequestHandler<APIGatewayProxyReques
         exchangeData.setDate(exchangeDataRepository.getDate().toString());
         exchangeData.setMainCode(exchangeDataRepository.getMainCode());
         exchangeData.setInstanceDate(new Date().toString());
+
+        LOG.info("CurrencyDataFetcher exchangeData: " + exchangeData.toString());
         ExchangeDataDBHandler.putItemOne(exchangeData);
+
+        LOG.info("Item stored in DynamoDB");
 
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
