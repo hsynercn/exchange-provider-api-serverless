@@ -2,7 +2,7 @@ repo_name: hsynercn/exchange-provider-api-serverless
 report_id: d45d0ce9c39474a165f5b4e2e20a6c57
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-31T10:51:57+00:00'
+timestamp: '2024-02-29T19:45:13+00:00'
 requested_by: hsynercn
 provider: github
 branch: main
@@ -123,12 +123,6 @@ tools:
   last_updated_by: Huseyin Can Ercan
   last_updated_on: 2024-01-10 21:35:07.000000000 Z
   vulnerabilities:
-  - name: Deeply nested json in jackson-databind
-    cve_id: CVE-2020-36518
-    cve_url: https://github.com/advisories/GHSA-57j2-w4cx-62h2
-    detected_date: Mar 23
-    severity: high
-    first_patched: 2.12.6.1
   - name: Uncontrolled Resource Consumption in FasterXML jackson-databind
     cve_id: CVE-2022-42004
     cve_url: https://github.com/advisories/GHSA-rgv9-q543-rqg4
@@ -148,6 +142,12 @@ tools:
     detected_date: Oct 5
     severity: high
     first_patched: 2.12.7.1
+  - name: Deeply nested json in jackson-databind
+    cve_id: CVE-2020-36518
+    cve_url: https://github.com/advisories/GHSA-57j2-w4cx-62h2
+    detected_date: Mar 23
+    severity: high
+    first_patched: 2.12.6.1
 - name: org.apache.logging.log4j:log4j-api
   description: The Apache Log4j API
   version: 2.17.1
