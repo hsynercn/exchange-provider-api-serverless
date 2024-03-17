@@ -1,0 +1,176 @@
+repo_name: hsynercn/exchange-provider-api-serverless
+report_id: d45d0ce9c39474a165f5b4e2e20a6c57
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:45:13+00:00'
+requested_by: hsynercn
+provider: github
+branch: main
+detected_tools_count: 11
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless
+  detection_source: Repo Metadata
+- name: Log4j
+  description: A Java-based logging utility
+  website_url: https://logging.apache.org/log4j/2.x/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Logging Tools
+  image_url: https://img.stackshare.io/service/2804/Coralogix-log4j-integration.jpg
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-09 10:54:01.000000000 Z
+- name: AWS Lambda
+  description: Automatically run code in response to modifications to objects in Amazon
+    S3 buckets, messages in Kinesis streams, or updates in DynamoDB
+  website_url: http://aws.amazon.com/lambda
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Serverless / Task Processing
+  image_url: https://img.stackshare.io/service/1909/aws-lambda.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-10 21:35:07.000000000 Z
+- name: Serverless
+  description: The most widely-adopted toolkit for building serverless applications
+  website_url: https://github.com/serverless/serverless
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Serverless / Task Processing
+  image_url: https://img.stackshare.io/service/5095/serverless-logo.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/serverless.yml
+  detection_source: aws-java-exchange-provider-api/serverless.yml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-09 10:54:01.000000000 Z
+- name: com.amazonaws:aws-java-sdk-dynamodb
+  description: The AWS Java SDK for Amazon DynamoDB module holds the client classes
+    that are used for communicating with Amazon DynamoDB Service
+  version: 1.11.573
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-10 21:35:07.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-annotations
+  description: Core annotations used for value types
+  version: 2.11.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-10 21:35:07.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-core
+  description: Core Jackson processing abstractions
+  version: 2.11.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-10 21:35:07.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-databind
+  description: 'General data-binding functionality for Jackson: works on core streaming
+    API'
+  version: 2.11.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-10 21:35:07.000000000 Z
+  vulnerabilities:
+  - name: Uncontrolled Resource Consumption in FasterXML jackson-databind
+    cve_id: CVE-2022-42004
+    cve_url: https://github.com/advisories/GHSA-rgv9-q543-rqg4
+    detected_date: Oct 5
+    severity: high
+    first_patched: 2.12.7.1
+  - name: jackson-databind possible Denial of Service if using JDK serialization to
+      serialize JsonNode
+    cve_id: CVE-2021-46877
+    cve_url: https://github.com/advisories/GHSA-3x8x-79m2-3w2w
+    detected_date: Mar 21
+    severity: high
+    first_patched: 2.12.6
+  - name: Uncontrolled Resource Consumption in Jackson-databind
+    cve_id: CVE-2022-42003
+    cve_url: https://github.com/advisories/GHSA-jjjh-jjxp-wpff
+    detected_date: Oct 5
+    severity: high
+    first_patched: 2.12.7.1
+  - name: Deeply nested json in jackson-databind
+    cve_id: CVE-2020-36518
+    cve_url: https://github.com/advisories/GHSA-57j2-w4cx-62h2
+    detected_date: Mar 23
+    severity: high
+    first_patched: 2.12.6.1
+- name: org.apache.logging.log4j:log4j-api
+  description: The Apache Log4j API
+  version: 2.17.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-09 10:54:01.000000000 Z
+- name: org.apache.logging.log4j:log4j-core
+  description: The Apache Log4j Implementation
+  version: 2.17.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hsynercn/exchange-provider-api-serverless/blob/main/aws-java-exchange-provider-api/pom.xml
+  detection_source: aws-java-exchange-provider-api/pom.xml
+  last_updated_by: Huseyin Can Ercan
+  last_updated_on: 2024-01-09 10:54:01.000000000 Z
